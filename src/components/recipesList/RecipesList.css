@@ -1,0 +1,18 @@
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 30px;
+    padding: 70px 25%;
+}
+
+.box{
+    text-align: left;
+    border: none;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);;
+
+}

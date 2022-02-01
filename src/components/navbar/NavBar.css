@@ -1,0 +1,10 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgb(88,36,156);
+    padding: 7px 25%;
+  }
+
+  .heading{
+    font-size: 32px;
+    color: #fff;
+  }
