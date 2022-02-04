@@ -1,24 +1,25 @@
-import React from "react";
+import { Link } from 'react-router-dom';
 import './RecipesList.css';
 
 
-const RecipesList = () => {
+const RecipesList = ({recipes}) => {
+    
     return (
         <div className="box-container">
-            <div className="box">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit.</p>
-            </div>
+            {recipes.map((recipes) =>(
+                <div className="box" key={recipes.id}>
+            <h1>{recipes.title}</h1>
+            <h3>{recipes.cookingTime} to make</h3>
+            <p>{recipes.method}</p>
 
-            <div className="box">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit.</p>
+                <Link to={`/recipes/${recipes.id}`}>
+            <button className="cookThis">Cook this</button>
+            </Link>
+            
+            
             </div>
-
-            <div className="box">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit.</p>
-            </div>
+            ))}
+ 
         </div>
     )
 }

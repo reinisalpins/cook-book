@@ -1,18 +1,78 @@
 .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 30px;
-    padding: 70px 25%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 70px 20%;
 }
 
 .box{
     text-align: left;
     border: none;
     position: relative;
-    box-shadow: var(--box-shadow);
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 2px;
+    padding: 15px;
     background-color: #fff;
-    box-shadow: 0 10px 10px rgba(0,0,0,.1);;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    text-decoration: none;
 
 }
+.box a{
+    text-decoration: none;
+}
+
+.box:hover{
+    animation: shake 0.5s;
+    
+}
+@keyframes shake {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+
+    25% { transform: translate(1px, -2px) rotate(-5deg); }
+
+    75% { transform: translate(1px, -2px) rotate(5deg); }
+
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+
+
+
+  }
+
+h1{
+    font-size: 25px;
+    color: rgb(85,85,85);
+    font-weight: bold;
+    
+}
+
+h3{
+    font-size: 20px;
+    color: rgb(163,172,190);
+    font-weight: 100;
+}
+p{
+    font-size: 17px;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+
+.cookThis{
+    margin:0 auto;
+    display:block;
+    background-color: rgb(226,226,226); /* Green */
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.cookThis:hover{
+    background-color: rgb(235, 233, 233);
+}
+
