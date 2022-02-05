@@ -1,0 +1,21 @@
+ .search-container {
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+  }
+  
+  input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+    
+  }
+
+  .search{
+      color: #fff;
+      display: inline;
+      font-size: 25px;
+      padding-right: 5px;
+  }

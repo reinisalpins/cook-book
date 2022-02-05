@@ -1,10 +1,13 @@
 .navbar {
-    overflow: hidden;
+    overflow: auto;
     background-color: rgb(88,36,156);
-    padding: 7px 20%;
+    padding: 5px 20%;
+    position: relative;
   }
 
   .heading{
     font-size: 32px;
     color: #fff;
+    position: relative;
+    float: left;
   }
