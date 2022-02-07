@@ -1,6 +1,7 @@
 import NavBar from './components/navbar/NavBar'
 import Home from './pages/home/Home';
 import Recipe from './pages/recipe/Recipe';
+import Create from './pages/create/Create';
 import {BrowserRouter , Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/create' element={<Create/>}/>
           <Route path='/recipes/:id' element={<Recipe/>} />
         </Routes>
       </BrowserRouter>

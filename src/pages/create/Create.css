@@ -1,0 +1,68 @@
+.create {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .create label {
+    font-size: 20px;
+    float: left;
+    display: block;
+    padding: 7px 0;
+    
+  }
+  .create h2 {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  .create input, .create textarea, .create select {
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    resize: none;
+  }
+  .create button {
+    background: #58249c;
+    margin-top: 10px;
+    color: #fff;
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .create button:hover{
+    background: rgb(106, 59, 167);
+  }
+
+ .create .ingredients{
+      width: 78%;
+      display: inline;
+      float: left;
+  } 
+
+  .create .add{
+    background: #58249c;
+    float: right;
+    width: 19%;
+    color: #fff;
+    border: 0;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  } 
+  .create h4{
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    font-weight: 100;
+    clear: both;
+  }

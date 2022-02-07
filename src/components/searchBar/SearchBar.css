@@ -1,14 +1,15 @@
  .search-container {
     float: right;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     
   }
   
   input[type=text] {
     padding: 10px;
     font-size: 17px;
-    border: none;
+    width: 250px;
+    border: 1px solid white;
     border-radius: 3px;
     
   }
@@ -17,5 +18,5 @@
       color: #fff;
       display: inline;
       font-size: 25px;
-      padding-right: 5px;
+      padding-right: 10px;
   }
