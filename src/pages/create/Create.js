@@ -36,13 +36,9 @@ const handleAdd = (e) => {
     }).then(() => {
         console.log('new blog added')
         setIsPending(false)
+        setTimeout(() => navigate('/'), 100)
     })
-
-    navigate('/')
   }
-
-   
-
 
   return (
     <div className="create">
@@ -63,7 +59,7 @@ const handleAdd = (e) => {
           onChange={(e) => SetIngredient(e.target.value)}
         />
        <button type="button" className="add" onClick={handleAdd}>add</button>
-        <h4 >Current ingredients: 
+        <h4>Current ingredients: {" "}
             {ingredients.map(e =>
                 <span key={i++}>
                     {e} {','}
@@ -80,7 +76,8 @@ const handleAdd = (e) => {
 
     <label>Cooking time (in minutes):</label>
         <input 
-          type="text" 
+          type="number" 
+          min={0}
           required 
           value={cookingTime}
           onChange={(e) => setCookingTime(e.target.value)}
