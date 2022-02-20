@@ -3,11 +3,10 @@ import './RecipesList.css';
 
 
 const RecipesList = ({recipes}) => {
-    
     return (
         <div className="box-container">
             {recipes.map((recipes) =>(
-                <div className="box" key={recipes.id}>
+                <div key={recipes.id} className={`box `}>
             <h1>{recipes.title}</h1>
             <h3>{recipes.cookingTime} to make</h3>
             <p>{recipes.method}</p>

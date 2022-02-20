@@ -8,3 +8,22 @@
     font-size: 32px;
     color: #fff;
   }
+<<<<<<< Updated upstream
+=======
+  .createbtn:hover{
+    background-color: rgb(106, 59, 167); 
+  }
+
+  .theme{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 26px;
+    padding-right: 30px;
+  }
+
+  .theme i{
+    font-size: 25px;
+    cursor: pointer;
+  }
+>>>>>>> Stashed changes
