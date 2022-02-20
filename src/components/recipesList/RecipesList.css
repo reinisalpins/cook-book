@@ -21,20 +21,8 @@
 }
 
 .box:hover{
-    animation: shake 0.5s;
-    
-}
-@keyframes shake {
-    0% { transform: translate(0px, 0px) rotate(0deg); }
-
-    25% { transform: translate(1px, -2px) rotate(-5deg); }
-
-    75% { transform: translate(1px, -2px) rotate(5deg); }
-
-    100% { transform: translate(0px, 0px) rotate(0deg); }
-
-
-
+    transform: rotate(4deg);
+ 
   }
 
 h1{
@@ -71,6 +59,7 @@ p{
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
+  
 }
 .cookThis:hover{
     background-color: rgb(235, 233, 233);

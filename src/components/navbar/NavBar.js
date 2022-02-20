@@ -24,9 +24,6 @@ const NavBar = () => {
 
     return (
         <div className="navbar">
-
-            <h1 className="heading">Cook Book</h1>
-
             <Link to="/"><h1 className="heading">Cook Book</h1></Link>
             
            <div className="create-button-container">
