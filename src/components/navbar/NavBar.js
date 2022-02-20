@@ -1,7 +1,6 @@
 import React from "react";
 import './NavBar.css';
-<<<<<<< Updated upstream
-=======
+
 import SearchBar from '../searchBar/SearchBar';
 import { Link } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
@@ -11,7 +10,7 @@ import { useState } from "react";
 const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
 `;
->>>>>>> Stashed changes
+
 
 
 const NavBar = () => {
@@ -25,9 +24,9 @@ const NavBar = () => {
 
     return (
         <div className="navbar">
-<<<<<<< Updated upstream
+
             <h1 className="heading">Cook Book</h1>
-=======
+
             <Link to="/"><h1 className="heading">Cook Book</h1></Link>
             
            <div className="create-button-container">
@@ -46,9 +45,6 @@ const NavBar = () => {
       </StyledApp>
     </ThemeProvider>
             </div>
-
-            
->>>>>>> Stashed changes
         </div>
     )
 }
